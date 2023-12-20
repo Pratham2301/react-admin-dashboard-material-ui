@@ -63,11 +63,11 @@ export const sidebarMenu = [
         icon: BarChartOutlinedIcon,
         path: '/bar',
     },
-    {
-        title: 'Pie Chart',
-        icon: PieChartOutlineOutlinedIcon,
-        path: '/pie',
-    },
+    // {
+    //     title: 'Pie Chart',
+    //     icon: PieChartOutlineOutlinedIcon,
+    //     path: '/pie',
+    // },
     {
         title: 'Line Chart',
         icon: TimelineOutlinedIcon,
