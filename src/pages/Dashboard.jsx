@@ -7,8 +7,12 @@ import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import TrafficIcon from "@mui/icons-material/Traffic";
 import EmailIcon from "@mui/icons-material/Email";
-
-
+import ThermostatIcon from "@mui/icons-material/Thermostat"
+import ThermostatAutoIcon from "@mui/icons-material/ThermostatAuto"
+import ScreenRotationAltIcon from "@mui/icons-material/ScreenRotationAlt"
+import ThreeSixtyIcon from "@mui/icons-material/ThreeSixty"
+import HandymanIcon from "@mui/icons-material/Handyman"
+import Graph from "../components/temp2k.jpg"
 const Dashboard = () => {
 
   const theme = useTheme();
@@ -55,12 +59,12 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="12,361"
-            subtitle="Emails Sent"
-            progress="0.75"
-            increase="+14%"
+            title="298"
+            subtitle="Air Temperature"
+            progress="0.66"
+            increase="+20K"
             icon={
-              <EmailIcon
+              <ThermostatIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
@@ -75,12 +79,12 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="431,225"
-            subtitle="Sales Obtained"
+            title="310"
+            subtitle="Process Temperature"
             progress="0.50"
-            increase="+21%"
+            increase="+15K"
             icon={
-              <PointOfSaleIcon
+              <ThermostatAutoIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
@@ -95,12 +99,12 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="32,441"
-            subtitle="New Clients"
+            title="191"
+            subtitle="Tool Wear"
             progress="0.30"
-            increase="+5%"
+            increase="+5"
             icon={
-              <PersonAddIcon
+              <HandymanIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
@@ -115,12 +119,12 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="1,325,134"
-            subtitle="Traffic Received"
+            title="57.6"
+            subtitle="Torque"
             progress="0.80"
-            increase="+43%"
+            increase="+10Nm"
             icon={
-              <TrafficIcon
+              <ThreeSixtyIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
@@ -146,14 +150,14 @@ const Dashboard = () => {
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Revenue Generated
+                Variation of parameters with time
               </Typography>
               <Typography
                 variant="h3"
                 fontWeight="bold"
                 color={colors.greenAccent[500]}
               >
-                $59,342.32
+              
               </Typography>
             </Box>
             <Box>
@@ -187,7 +191,7 @@ const Dashboard = () => {
               Recent Transactions
             </Typography>
           </Box>
-          {mockTransactions.map((transaction, i) => (
+          {/* {mockTransactions.map((transaction, i) => (
             <Box
               key={`${transaction.txId}-${i}`}
               display="flex"
@@ -217,7 +221,8 @@ const Dashboard = () => {
                 ${transaction.cost}
               </Box>
             </Box>
-          ))}
+          ))} */}
+          <img style={{height:'300px'}} src={Graph} alt=""/>
         </Box>
 
         {/* 🟨🟨🟨🟨🟨🟨 ROW 3 🟨🟨🟨🟨🟨🟨 */}
@@ -228,7 +233,8 @@ const Dashboard = () => {
           p="30px"
         >
           <Typography variant="h5" fontWeight="600">
-            Campaign
+            Health prediction
+            
           </Typography>
           <Box
             display="flex"
@@ -242,9 +248,9 @@ const Dashboard = () => {
               color={colors.greenAccent[500]}
               sx={{ mt: "15px" }}
             >
-              $48,352 revenue generated
+              75% health found
             </Typography>
-            <Typography>Includes extra misc expenditures and costs</Typography>
+            <Typography>Model Health compared to new</Typography>
           </Box>
         </Box>
 

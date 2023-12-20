@@ -16,44 +16,44 @@ export const sidebarMenu = [
         icon: HomeOutlinedIcon,
         path: '/',
     },
-    {
-        title: 'Info',
-        tag: 'divider'
-    },
-    {
-        title: 'Manage Team',
-        icon: PeopleOutlinedIcon,
-        path: '/team',
-    },
-    {
-        title: 'Contacts Information',
-        icon: ContactsOutlinedIcon,
-        path: '/contacts',
-    },
-    {
-        title: 'Invoices Balances',
-        icon: ReceiptOutlinedIcon,
-        path: '/invoices',
-    },
-    {
-        title: 'Inputs',
-        tag: 'divider'
-    },
-    {
-        title: 'Profile Form',
-        icon: PersonOutlinedIcon,
-        path: '/form',
-    },
-    {
-        title: 'Calendar',
-        icon: CalendarTodayOutlinedIcon,
-        path: '/calendar',
-    },
-    {
-        title: 'FAQ Page',
-        icon: HelpOutlineOutlinedIcon,
-        path: '/faq',
-    },
+    // {
+    //     title: 'Info',
+    //     tag: 'divider'
+    // },
+    // {
+    //     title: 'Manage Team',
+    //     icon: PeopleOutlinedIcon,
+    //     path: '/team',
+    // },
+    // {
+    //     title: 'Contacts Information',
+    //     icon: ContactsOutlinedIcon,
+    //     path: '/contacts',
+    // },
+    // {
+    //     title: 'Invoices Balances',
+    //     icon: ReceiptOutlinedIcon,
+    //     path: '/invoices',
+    // },
+    // {
+    //     title: 'Inputs',
+    //     tag: 'divider'
+    // },
+    // {
+    //     title: 'Profile Form',
+    //     icon: PersonOutlinedIcon,
+    //     path: '/form',
+    // },
+    // {
+    //     title: 'Calendar',
+    //     icon: CalendarTodayOutlinedIcon,
+    //     path: '/calendar',
+    // },
+    // {
+    //     title: 'FAQ Page',
+    //     icon: HelpOutlineOutlinedIcon,
+    //     path: '/faq',
+    // },
     {
         title: 'Charts',
         tag: 'divider'

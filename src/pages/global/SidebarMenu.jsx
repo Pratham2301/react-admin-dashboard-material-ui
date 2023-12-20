@@ -82,7 +82,7 @@ const SidebarMenu = () => {
                     alt="profile-user"
                     width="100px"
                     height="100px"
-                    src={`../../alex.jpg`}
+                    src={`../../tempo.jpg`}
                     style={{ cursor: "pointer", borderRadius: "50%" }}
                   />
                 </Box>
@@ -94,7 +94,7 @@ const SidebarMenu = () => {
                     color={colors.grey[100]}
                     sx={{ m: "10px 0 0 0" }}
                   >
-                    Alex
+                    Concerned Person
                   </Typography>
                   <Typography variant="h5" color={colors.greenAccent[500]}>
                     Main Admin
