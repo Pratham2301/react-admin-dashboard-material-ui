@@ -19,6 +19,11 @@ const SidebarMenu = () => {
   const [selected, setSelected] = useState(urlPathName);
   const [isCollapsed, setIsCollapsed] = useState(false);
 
+  const handleAdminClick = () => {
+    
+    window.location.href = 'http://127.0.0.1:5173'
+  };
+
   return (
     <Box
       sx={{
@@ -61,7 +66,7 @@ const SidebarMenu = () => {
                   alignItems="center"
                   ml="15px"
                 >
-                  <Typography variant="h3" color={colors.grey[100]}>
+                  <Typography onClick={handleAdminClick} variant="h3" color={colors.grey[100]}>
                     ADMIN
                   </Typography>
                   <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
