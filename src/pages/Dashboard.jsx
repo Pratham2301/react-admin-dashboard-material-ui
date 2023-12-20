@@ -55,9 +55,9 @@ const Dashboard = () => {
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
 
         <Box>
-          <a href={Report} download><Button onClick={repClick}
+          <a href={Report} download>Download Report<Button onClick={repClick}
             sx={{
-              backgroundColor: colors.blueAccent[700],
+              // backgroundColor: colors.blueAccent[700],
               color: colors.grey[100],
               fontSize: "14px",
               fontWeight: "bold",
