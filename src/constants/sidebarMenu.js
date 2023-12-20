@@ -73,9 +73,10 @@ export const sidebarMenu = [
         icon: TimelineOutlinedIcon,
         path: '/line',
     },
-    {
-        title: 'Geography Chart',
-        icon: MapOutlinedIcon,
-        path: '/geography',
-    },
+    // {
+    //     title: 'Geography Chart',
+    //     icon: MapOutlinedIcon,
+    //     path: '/geography',
+    // },
+    ,
 ]
