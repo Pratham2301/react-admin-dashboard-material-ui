@@ -59,7 +59,7 @@ export const sidebarMenu = [
         tag: 'divider'
     },
     {
-        title: 'Bar Chart',
+        title: 'Heat Map',
         icon: BarChartOutlinedIcon,
         path: '/bar',
     },
