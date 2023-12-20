@@ -13,6 +13,8 @@ import ScreenRotationAltIcon from "@mui/icons-material/ScreenRotationAlt"
 import ThreeSixtyIcon from "@mui/icons-material/ThreeSixty"
 import HandymanIcon from "@mui/icons-material/Handyman"
 import Graph from "../components/temp2k.jpg"
+
+import Report from './report.pdf'
 const Dashboard = () => {
 
   const theme = useTheme();
@@ -23,16 +25,37 @@ const Dashboard = () => {
     window.location.href = 'http://127.0.0.1:5173/map'
   };
 
+  const repClick = () => {
+    const pdfFilePath = 'C:\\Users\conta\Desktop\react-admin-dashboard-material-ui\report.pdf';
+    window.open(pdfFilePath, '_blank');
+    // window.location.href = 'report.pdf'
+  };
+
+  // const DownloadButton = () => {
+  //   const handleDownload = () => {
+      
+  //     const pdfFilePath = 'file://C:/Users/conta/Downloads/report.pdf';
+  
+  //     const downloadLink = document.createElement('a');
+  //     downloadLink.href = pdfFilePath;
+  //     downloadLink.download = 'report.pdf';
+  
+  
+  //     document.body.appendChild(downloadLink);
+  //     downloadLink.click();   
+  //     document.body.removeChild(downloadLink);
+  //   };
+
   return (
     <Box m="20px">
 
-      {/* HEADER */}
+      
       <Box display="flex" justifyContent="space-between" alignItems="center">
 
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
 
         <Box>
-          <Button
+          <a href={Report} download><Button onClick={repClick}
             sx={{
               backgroundColor: colors.blueAccent[700],
               color: colors.grey[100],
@@ -41,9 +64,11 @@ const Dashboard = () => {
               padding: "10px 20px",
             }}
           >
-            <DownloadOutlinedIcon sx={{ mr: "10px" }} />
-            Download Reports
-          </Button>
+            
+            {/* <DownloadOutlinedIcon sx={{ mr: "10px" }} /> <a href='C:\Users\conta\Desktop\react-admin-dashboard-material-ui\report.pdf' download= 'report.pdf'>Download Reports</a> */}
+            
+          </Button></a>
+          
         </Box>
 
       </Box>
