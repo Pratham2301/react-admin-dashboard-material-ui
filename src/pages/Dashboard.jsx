@@ -18,6 +18,11 @@ const Dashboard = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
+  const MapClick = () => {
+    
+    window.location.href = 'http://127.0.0.1:5173/map'
+  };
+
   return (
     <Box m="20px">
 
@@ -277,7 +282,7 @@ const Dashboard = () => {
           backgroundColor={colors.primary[400]}
           padding="30px"
         >
-          <Typography
+          <Typography onClick={MapClick}
             variant="h5"
             fontWeight="600"
             sx={{ marginBottom: "15px" }}
